@@ -1,0 +1,20 @@
+<!-- create_mockup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Create Mockup</title>
+    <!-- Add your CSS styles here -->
+    <style>
+        /* CSS styles */
+    </style>
+</head>
+<body>
+    <h1>Create Mockup</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Generate PDF</button>
+    </form>
+</body>
+</html>
